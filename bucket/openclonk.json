@@ -19,5 +19,19 @@
             "openclonk.exe",
             "OpenClonk"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://www.openclonk.org/download/",
+        "regex": "openclonk-([\\d.]+)-x64.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://www.openclonk.org/builds/release/$version/openclonk-$version.exe#/dl.7z"
+            },
+            "64bit": {
+                "url": "https://www.openclonk.org/builds/release/$version/openclonk-$version-x64.exe#/dl.7z"
+            }
+        }
+    }
 }
